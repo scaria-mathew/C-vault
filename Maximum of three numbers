@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,m;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a,&b,&c);
+    m = a>b?a:b;
+    if (m>c)
+    printf("The maximum: %d", m);    
+    else
+    printf("The maximum: %d", c);
+    return 0;
+}
