@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,s,d,m,q,opt;
+	printf("Enter two numbers: ");
+	scanf("%d %d", &a,&b);
+	
+	s = a+b;
+	d = a-b;
+	m = a*b;
+	q = a/b;
+	
+	printf("\n1 --> Sum");
+	printf("\n2 --> Difference");
+	printf("\n3 --> Product");
+	printf("\n4 --> Quotient");
+	
+	printf("\n\nEnter the option: ");
+	scanf("%d", &opt);
+	
+	switch(opt)
+	{
+		case 1:
+			printf("\nSum: %d", s);
+			break;
+		case 2:	
+			printf("\nDifference: %d", d);
+			break;
+		case 3: 	
+			printf("\nProduct: %d", m);
+			break;
+		case 4:	
+			printf("\nQuotient: %d", q);
+			break;
+		default:
+			printf("Error");
+			break;	
+	}
+	return 0;
+}
