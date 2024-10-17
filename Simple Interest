@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	float p,r,t,m,i;
+	printf("Principal Amount: ");
+	scanf("%f", &p);
+	printf("Annual Interest Rate: ");
+	scanf("%f", &r);
+	printf("Time(in months): ");
+	scanf("%f", &m);
+	t = m/12;
+	
+	i = (p*r*t)/100;
+	printf("Simple interest: %f", i);
+	return 0;
+}
