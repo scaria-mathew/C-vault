@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int h,m,min;
+	printf("Hours: ");
+	scanf("%d", &h);
+	printf("Minutes: ");
+	scanf("%d", &m);
+	
+	min = (h*60) + m;
+	
+	printf("%d minutes", min);
+	return 0;	
+}
