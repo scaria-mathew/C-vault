@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	char c;
+	printf("Enter the character: ");
+	scanf("%c",&c);
+	
+	int a = (int)c;
+	
+	printf("The ASCII value: %d", a);
+	return 0;
+}
