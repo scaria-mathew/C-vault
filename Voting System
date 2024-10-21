@@ -44,7 +44,7 @@ int main()
 			a++;
 			break;
 			case 3: 
-			printf("\nVoted for Leo Das");
+			printf("\nVoted for Leo");
 			l++;
 			break;
 			default:
