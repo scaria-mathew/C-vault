@@ -1,0 +1,82 @@
+#include<stdio.h>
+int main()
+{
+	int a[10],l,del,i,opt;
+	printf("Enter the limit: ");
+	scanf("%d", &l);
+	for(i=0;i<l;i++)
+	{
+		printf("Enter a[%d]: ", i);
+		scanf("%d", &a[i]);
+	}
+	printf("\n");
+	for(i=0;i<l;i++)
+	printf("%d\t", a[i]);
+	printf("\n");
+	
+	printf("\nOption 1 --> Insert into the first position of the array");
+	printf("\nOption 2 --> Insert into the 3rd position of the array");
+	printf("\nOption 3 --> Delete from the first position");
+	printf("\nOption 4 --> Delete the last element");
+	printf("\nOption 5 --> Delete from the nth position");
+	
+	printf("\nEnter the option: ");
+	scanf("%d", &opt);
+	
+	switch(opt)
+		{
+			case 1: 
+			{
+				printf("Enter the element: ");
+				scanf("%d", &a[0]);
+				printf("\nElement 1 inserted");
+				printf("\n\n");
+				for(i=0;i<l;i++)
+				printf("%d\t",a[i]);
+			}
+			break;
+			case 2: 
+			{
+				printf("Enter the element: ");
+				scanf("%d", &a[2]);
+				printf("\nElement 3 inserted");
+				printf("\n\n");
+				for(i=0;i<l;i++)
+				printf("%d\t",a[i]);
+			}
+			break;
+			case 3: 
+			{
+				a[0] = 0;
+				printf("\nElement 1 deleted!");
+				printf("\n\n");
+				for(i=0;i<l;i++)
+				printf("%d\t", a[i]);
+			}
+			break;
+			case 4: 
+			{
+				a[l-1] = 0;
+				printf("\nLast element deleted!");
+				printf("\n\n");
+				for(i=0;i<l;i++)
+				printf("%d\t", a[i]);
+			}
+			break;
+			case 5: 
+			{
+				printf("Enter the position to be deleted: ");
+				scanf("%d", &del);
+				a[del-1] = 0;
+				printf("\nElement %d deleted!", del);
+				printf("\n\n");
+				for(i=0;i<l;i++)
+				printf("%d\t", a[i]);
+			}
+			break;
+			default:
+			printf("Option dosen't exist!");
+			break;	
+		}
+	
+}
