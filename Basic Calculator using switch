@@ -1,0 +1,32 @@
+
+#include<stdio.h>
+int main()
+{
+	int a,s,m,d,n,o,t;
+	printf("Enter 1 for Addition\nEnter 2 for Subtraction\nEnter 3 for Multiplication\nEnter 4 for Division");
+	printf("\n\nEnter the first number: ");
+	scanf("%d",&o);
+	printf("Enter the second number: ");
+	scanf("%d",&t);
+	printf("Enter the option: ");
+	scanf("%d",&n);
+	switch(n)
+	{
+		case 1:
+		a=o+t;
+		printf("%d+%d=%d",o,t,a);
+		break;
+		case 2:
+		s=o-t;
+		printf("%d-%d=%d",o,t,s);
+		break;
+		case 3:
+		m=o*t;
+		printf("%d*%d=%d",o,t,m);
+		break;
+		case 4:
+		d=o/t;
+		printf("%d/%d=%d",o,t,d);
+		break;
+	}
+}
