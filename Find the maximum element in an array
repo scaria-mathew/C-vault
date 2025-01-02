@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a[10],i,l,b;
+    printf("Enter limit: ");
+    scanf("%d", &l);
+    while(i<l)
+    {
+        printf("Enter a[%d]: ",i);
+        scanf("%d", &a[i]);
+        i++;
+    }
+    b = a[0];
+    for(i=0;i<l;i++)
+    {
+         if (a[i] > b) 
+         {
+            b = a[i];
+         }
+    }
+    printf("Maximum: %d", b);
+    return 0;
+}
+
